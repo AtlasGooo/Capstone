@@ -1,0 +1,17 @@
+%YAML:1.0
+
+imgTopic: "/raspicam_node/image/compressed"
+
+HSVLowHigh: [0,0,0,  180,255,80]
+
+filterKernelSize: 3
+filterSigmaX: 2.0
+maskUp: 0.6
+minAreaRatio: 0.1
+
+
+velX: 0.16
+velW_max_: 2.0
+PcontrolRatio: 4
+
+enableTest: True

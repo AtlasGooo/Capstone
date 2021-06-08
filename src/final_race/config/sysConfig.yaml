@@ -1,0 +1,104 @@
+%YAML:1.0
+
+packagePath: "/home/lzj/Workspaces/myturtlebot3/src/final_race"
+
+sysConfigRelated: "/config/sysConfig.yaml"
+taskConfigRelated: "/config/taskConfig.yaml"
+lineDetectRelated: "/config/lineDetect.yaml"
+
+vel_topic: "/cmd_vel"
+
+### Test a round in virtual environment
+# # each row represent an start point of a task
+# numOfTasks: 4
+# taskStartPoints: !!opencv-matrix
+#   rows: 4
+#   cols: 2
+#   dt: d
+#   data: [-0.5,0.0,  0.0,-0.5,  0.5,0.0,  0.0,0.5  ]
+# # task names ( decide which subclass of task to be found )
+# taskNames:
+#   - "PS"
+#   - "SS"
+#   - "PS"
+#   - "SS"
+# taskStartAngles: !!opencv-matrix
+#   rows: 4
+#   cols: 1
+#   dt: d
+#   data: [0.0, 180.0, 270.0, 350.0]
+# # RunMode: beginOnly:0  actionOnly:1  Complete:2
+# RunMode: 2
+
+
+
+  
+
+
+
+### Test round1 action (can't test in virtual env)
+# each row represent an start point of a task
+# numOfTasks: 6
+# taskStartPoints: !!opencv-matrix
+#   rows: 6
+#   cols: 2
+#   dt: d
+#   data: [-0.8,-0.65,   -4.23,0.27,   -2.7,0.05,    -4.50,-4.0, -4.7,-3.10,  -0.487, -4.20 ]
+# taskStartAngles: !!opencv-matrix
+#   rows: 6
+#   cols: 1
+#   dt: d
+#   data: [200.0, 0.0,  0.0,  90.0, 0.0, 0.0]
+# # task names ( decide which subclass of task to be found )
+# taskNames:
+#   - "Line"
+#   - "PS"  
+#   - "SS"  
+#   - "PS"
+#   - "SS"
+#   - "PS"
+# # RunMode: beginOnly:0  actionOnly:1  Complete:2
+# RunMode: 2
+
+
+
+## Test round2 action (can't test in virtual env)
+# each row represent an start point of a task
+
+numOfTasks: 13
+taskStartPoints: !!opencv-matrix
+  rows: 13
+  cols: 2
+  dt: d
+  data: [-0.8,-0.65,   -4.23,0.27,   -2.7,0.05,    -4.50,-4.0, -4.7,-3.10,    -4.23,0.27,   -2.7,0.05,    -4.50,-4.0, -4.7,-3.10,       -4.23,0.27,   -2.7,0.05,    -4.50,-4.0, -4.7,-3.10   ]
+taskStartAngles: !!opencv-matrix
+  rows: 13
+  cols: 1
+  dt: d
+  data: [200.0,    0.0,  0.0,  90.0, 340.0,    0.0, 0.0, 90.0, 340.0,    0.0, 0.0, 90.0,  340.0  ]
+# task names ( decide which subclass of task to be found )
+taskNames:
+  - "Line"
+  - "PS"  
+  - "SS"  
+  - "PS"
+  - "SS"
+  - "PS"  
+  - "SS"  
+  - "PS"
+  - "SS"
+  - "PS"  
+  - "SS"  
+  - "PS"
+  - "SS"
+# RunMode: beginOnly:0  actionOnly:1  Complete:2
+RunMode: 2
+
+
+
+
+
+
+
+
+enableTest: True
