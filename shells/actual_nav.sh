@@ -1,5 +1,5 @@
 ###
- # @Author: your name
+ # @Author: Lin Zijun
  # @Date: 2021-05-26 18:32:31
  # @LastEditTime: 2021-05-28 15:53:52
  # @LastEditors: Please set LastEditors
@@ -8,6 +8,5 @@
 ### 
 
 
-$MAP = "/home/lzj/Workspaces/myturtlebot3/src/final_race/maps/actual_map/map.yaml"
 gnome-terminal -- roslaunch final_race lzj_turtlebot3_navigation.launch 
 sleep 0.5s
